@@ -39,22 +39,21 @@ header{
     box-sizing: border-box;
     display: flex;
     background-color: var(--BlueHeader);
-    padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
 }
 
 
 header .header__logo{
     width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: start;
+    height: 90%;
 }
 
 header .header__logo figure{
     height: 100%;
-    width: 20%;
+    width: 100%;
     background-image: url(../assets/images/logo.svg);
     background-position-y: center;
     background-position-x: initial;
@@ -63,7 +62,7 @@ header .header__logo figure{
 }
 
 header .header__nav{
-    width: 40%;
+    width: auto;
     display: flex;
 }
 
@@ -106,6 +105,10 @@ header .header__nav .header__contact{
    
 }
 
+header .header__hidden{
+    display: none;
+}
+
 /**************************************************/
 /**********************HERO************************/
 /**************************************************/
@@ -114,6 +117,7 @@ main{
     background-image: url(../assets/images/desktop/image-header.jpg);
     background-size: cover;
     background-position-y: bottom;
+    background-position-x: center;
     position: relative;
 }
 
@@ -150,6 +154,7 @@ main figure{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    margin-top: 0px;4
 }
 
 .about__container .about__your-brand--description{
@@ -219,6 +224,7 @@ main figure{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .about__container .about__your-brand--image figure{
@@ -315,12 +321,14 @@ main figure{
     width: 100%;
     height: 40vw;
     box-sizing: border-box;
+    margin-bottom: 2%;
 }
 
 .services__container .services__desing{
     width: 50%;
     height: 100%;
     background-image: url(../assets/images/desktop/image-graphic-design.jpg);
+    background-position: center;
     background-size: cover;
     position: relative;
 }
@@ -357,6 +365,7 @@ main figure{
     width: 50%;
     height: 100%;
     background-image: url(../assets/images/desktop/image-photography.jpg);
+    background-position: center;
     background-size: cover;
     position: relative;
 
@@ -396,6 +405,7 @@ main figure{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+    margin-top: 2%;
 
 }
 
@@ -490,15 +500,17 @@ main figure{
 /***********************************************/
 .examples{
     width: 100%;
-    height: 30vw;
+    height: auto;
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;    
+    margin-top: 2%;
 
 }
 
 .examples figure{
     width: 25%;
-    height: 100%;
+    height: 30vw;
 }
 
 .examples .examples__bottle{

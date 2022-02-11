@@ -1,0 +1,271 @@
+@media screen and (max-width: 960px){
+    main figure{
+        top: 50%;
+    }
+
+    .services__container{
+        height: 60vw;
+    }
+}
+
+@media screen and (max-width: 800px){
+    main figure{
+        top: 60%;
+    }
+
+    .about__container .about__your-brand--description{
+        height: 70vw;
+    
+    }
+
+    .about__container .about__your-brand--image{
+        height: 70vw;
+    
+    }
+
+    .about__container .about__auidience--image{
+        height: 70vw;
+    }
+
+    .about__container .about__audience--description{
+        height: 70vw;
+    }
+
+
+}
+
+@media screen and (max-width: 750px){
+    main{
+        height: 150vh;
+        background-image: url(../assets/images/mobile/image-header.jpg);
+        background-size: cover;
+        background-position-y: bottom;
+        position: relative;
+    }
+
+    main h1{
+        width: 70%;
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Fraunces', serif;
+        color: var(--White);
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        position: absolute;
+        left: 50%;
+        top: 25%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .services__container{
+        height: 90vw;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    header{
+        justify-content: space-around;
+        height: 20vh;
+    }
+
+    header .header__nav{
+       display: none;
+    }
+
+    header .header__hidden{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        background-image: url(../assets/images/icon-hamburger.svg);
+        background-size: cover;
+        box-sizing: border-box;
+        border: 0;
+    }
+
+    .about__container .about__your-brand--description{
+        width: 100%;
+        order: 2;
+        align-items: center;
+    
+    }
+
+    .about__container .about__your-brand--description h3{
+        text-align: center;
+    }
+
+    .about__container .about__your-brand--description p{
+        text-align: center;
+        width: 70%;
+    }
+
+    .about__container .about__your-brand--description .about__your-brand--more::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        width: 120px;
+        height: 10px;
+        transform: skew(-10deg) translateX(-50%);
+        background: rgba(250,212,0,0.3); 
+    }
+
+    .about__container .about__your-brand--description .about__your-brand--more:hover:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 120px;
+        height: 10px;
+        transform: skew(-10deg) translateX(-50%);
+        background: rgba(250,212,0,0.6); 
+    }
+
+
+    .about__container .about__your-brand--image{
+        width: 100%;
+        order: 1;
+    
+    }
+
+    .about__container .about__auidience--image{
+        width: 100%;
+        order: 3;
+    }
+
+    .about__container .about__audience--description{
+        width: 100%;
+        order: 4;
+        align-items: center;
+    }
+
+    .about__container .about__audience--description h3{
+        text-align: center;
+    }
+
+    .about__container .about__audience--description p{
+        text-align: center;
+        width: 70%;
+    }
+
+    .about__container .about__audience--description .about__audience--more::before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: 0px;
+        width: 120px;
+        height: 10px;
+        transform: skew(-10deg) translateX(-50%);
+        background: rgba(254,120,103,0.3); 
+    }
+
+    .about__container .about__audience--description .about__audience--more:hover:before{
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 120px;
+        height: 10px;
+        transform: skew(-10deg) translateX(-50%);
+        background: rgba(254,120,103,0.6); 
+    }
+
+
+    .services__container{
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .services__container .services__desing{
+        width: 100%;
+        height: 90vw;
+    }
+    
+    .services__container .services__photography{
+        width: 100%;
+        height: 90vw;
+    
+    }
+
+    .testimonials__container .testimonials__clients{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials__container .testimonials__clients .testimonials__one{
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .testimonials__container .testimonials__clients .testimonials__two{
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .testimonials__container .testimonials__clients .testimonials__three{
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .testimonials__container .testimonials__clients article .testimonials__position{
+       margin-bottom: 10vw;
+    }
+
+    .examples figure{
+        width: 50%;
+        height: 50vw;
+    }
+
+    footer{
+        height: 60vw;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    main h1{
+    
+        font-size: 4rem;
+    }
+    .services__container .services__desing{
+        height: 120vw;
+    }
+    
+    .services__container .services__photography{
+        height: 120vw;
+    
+    }
+    footer{
+        height: 120vw;
+    }
+
+    
+}
+
+@media screen and (max-width: 400px){
+    main{
+        height: 100vh;
+    }
+
+    main h1{
+        width: 100%;
+    }
+
+    .about__container .about__your-brand--description{
+        height: 100vw;
+    
+    }
+
+    .about__container .about__your-brand--image{
+        height: 100vw;
+    
+    }
+
+    .about__container .about__auidience--image{
+        height: 100vw;
+    }
+
+    .about__container .about__audience--description{
+        height: 100vw;
+    }
+
+}
