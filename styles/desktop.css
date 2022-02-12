@@ -43,6 +43,7 @@ header{
     padding-left: 2%;
     padding-right: 2%;
     align-items: center;
+    justify-content: space-around;
 }
 
 
@@ -89,7 +90,12 @@ header .header__nav ul li a{
    
 }
 
-header .header__nav .header__contact{
+header .header__nav ul li a:hover{
+    color: var(--Darkblue);
+   
+}
+
+header .header__contact{
     background-color: var(--White);
     width: 120px;
     height: 100%;
@@ -102,6 +108,13 @@ header .header__nav .header__contact{
     text-decoration: none;
     font-weight: 500;
     margin-left: 50px;
+   
+}
+
+header .header__contact:hover{
+    background-color: var(--BlueHeader);
+    border: 1px solid var(--White);
+    color: var(--White);
    
 }
 
@@ -146,6 +159,77 @@ main figure{
     top: 40%;
     transform: translate(-50%, -65%);
 }
+
+main .main__hidden{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 80%;
+    height: 70%;
+    background-color: var(--White);
+    display: none;    
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+main .main__hidden nav{ 
+    text-align: center;
+    display: flex;
+    height: 70%;
+}
+
+main .main__hidden nav ul{ 
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main .main__hidden nav ul a{
+    font-size: 2rem;
+    font-family: 'Barlow', sans-serif;
+    color: var(--VeryDarkGrayishBlue);
+    text-decoration: none;
+    position: relative;
+    font-weight: 500;
+}
+
+main  .main__hidden button{
+    background-color: var(--Yellow);
+    width: 50%;
+    height: 10%;
+    border-radius: 20px;
+    font-size: 1.6rem;
+    font-family: 'Fraunces', serif;
+    color: var(--VeryDarkDesaturatedBlue);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 500;
+    border: 0;
+    align-self: center;
+    
+    
+   
+}
+
+main  .main__hidden div{
+    width: 0;
+    height: 0;
+    border-bottom: 25px solid var(--White); 
+    border-left: 25px solid transparent;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+
+}
+
 
 /*************************************************/
 /*********************ABOUT***********************/
@@ -584,6 +668,12 @@ footer .footer__options p{
     
 }
 
+footer .footer__options p:hover{ 
+    color: var(--White);
+    cursor: pointer;
+    
+}
+
 footer .footer__social-media{
     width: 200px;
     height: 50px;
@@ -607,22 +697,26 @@ footer .footer__social-media .facebook{
     background-image: url(../assets/images/icon-facebook.svg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }
 
 footer .footer__social-media .instagram{
     background-image: url(../assets/images/icon-instagram.svg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }
 
 footer .footer__social-media .twitter{
     background-image: url(../assets/images/icon-twitter.svg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }
 
 footer .footer__social-media .pinterest{
     background-image: url(../assets/images/icon-pinterest.svg);
     background-position: center;
     background-size: cover;
+    cursor: pointer;
 }

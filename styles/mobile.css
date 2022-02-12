@@ -73,6 +73,14 @@
        display: none;
     }
 
+    header .header__contact{
+        display: none;
+    }
+
+    header .header__nav{
+        display: none;
+     }
+
     header .header__hidden{
         display: block;
         width: 30px;
@@ -244,7 +252,7 @@
 @media screen and (max-width: 400px){
     main{
         height: 100vh;
-    }
+    }   
 
     main h1{
         width: 100%;
